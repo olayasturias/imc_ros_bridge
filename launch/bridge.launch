@@ -16,7 +16,7 @@
   <arg name="imc_id" default="4"/>
   <arg name="imc_src" default="$(var imc_id)"/>
 
-  <node pkg="imc_ros_bridge" exec="bridge_node" name="$(var node_name)" output="screen" namespace="imc">
+  <node pkg="imc_ros_bridge" exec="bridge_node" name="$(var node_name)" output="screen"  namespace="imc">
     <param name="neptus_addr" value="$(var neptus_addr)"/>
     <param name="bridge_addr" value="$(var bridge_addr)"/>
     <param name="bridge_port" value="$(var bridge_port)" type="str"/>

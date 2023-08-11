@@ -86,7 +86,7 @@ private:
 
 public:
 
-    BridgeServer(IMCHandle& imc_handle, rclcpp::Node& ros_node, const std::string& ros_topic) : rclcpp::Node("bridge_server")
+    BridgeServer(IMCHandle& imc_handle, const std::string& ros_topic) : rclcpp::Node("bridge_server")
     {
         ros_pub = this->create_publisher<ROS_MSG>(ros_topic, 10);
         imc_handle.tcp_subscribe(IMC_MSG::getIdStatic(), std::bind(&BridgeServer::conversion_callback, this, std::placeholders::_1));
