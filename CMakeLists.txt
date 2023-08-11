@@ -17,6 +17,7 @@ find_package(imc_ros_bridge REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(Boost REQUIRED COMPONENTS thread)  # Include Boost Thread
 
 # Custom messages and services
 find_package(rosidl_default_generators REQUIRED)
@@ -118,20 +119,20 @@ target_include_directories(imc_factory  PUBLIC
 ament_target_dependencies(imc_factory  rclcpp std_msgs sensor_msgs geometry_msgs)
 
 add_library( udp_link src/udp_link.cpp )
-target_link_libraries( udp_link  ${rclcpp_LIBRARIES} )
+target_link_libraries( udp_link  imc_factory ${Boost_LIBRARIES} ${rclcpp_LIBRARIES} )
 target_include_directories(udp_link PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
   ${rclcpp_INCLUDE_DIRS})
-ament_target_dependencies(udp_link  rclcpp std_msgs sensor_msgs geometry_msgs)
+ament_target_dependencies(udp_link  rclcpp std_msgs sensor_msgs geometry_msgs Boost)
 
-add_library( imc_handle src/imc_handle.cpp )
-target_link_libraries( imc_handle  ${rclcpp_LIBRARIES} )
+add_library(imc_handle src/imc_handle.cpp )
+target_link_libraries( imc_handle imc_factory udp_link ${Boost_LIBRARIES} ${rclcpp_LIBRARIES})
 target_include_directories(imc_handle PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
   ${rclcpp_INCLUDE_DIRS})
-ament_target_dependencies(imc_handle rclcpp std_msgs sensor_msgs geometry_msgs)
+ament_target_dependencies(imc_handle rclcpp std_msgs sensor_msgs geometry_msgs Boost)
 
 add_library( imc_to_ros_abort src/imc_to_ros/Abort.cpp )
 target_link_libraries( imc_to_ros_abort  ${rclcpp_LIBRARIES} )
@@ -261,13 +262,58 @@ target_include_directories( ros_to_imc_DesiredZ  PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
   ${rclcpp_INCLUDE_DIRS})
-ament_target_dependencies(ros_to_imc_DesiredZ
-rclcpp imc_ros_bridge)
+ament_target_dependencies(ros_to_imc_DesiredZ rclcpp imc_ros_bridge)
 
 ament_export_dependencies(rclcpp)
 
-# install(TARGETS
-# ros_to_imc_gpsfix
-#   DESTINATION lib/${PROJECT_NAME})
+# Install launch files.
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+## Declare a C++ executable
+add_executable(bridge_node src/bridge_node.cpp)
+target_link_libraries( bridge_node  ${rclcpp_LIBRARIES} )
+target_include_directories( bridge_node   PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+  ${rclcpp_INCLUDE_DIRS})
+ament_target_dependencies(bridge_node 
+  rclcpp std_msgs sensor_msgs geometry_msgs imc_ros_bridge
+)
+
+target_link_libraries(bridge_node
+  imc_to_ros_heartbeat
+  imc_to_ros_goto
+  imc_to_ros_abort
+  imc_to_ros_plandb
+  imc_to_ros_plancontrol
+  ros_to_imc_plandb
+  ros_to_imc_heartbeat
+  ros_to_imc_gpsfix
+  ros_to_imc_goto
+  ros_to_imc_plancontrolstate
+  ros_to_imc_gpsnavdata
+  ros_to_imc_estimatedstate
+  ros_to_imc_vehiclestate
+  ros_to_imc_remotestate
+  ros_to_imc_sonardata
+  ros_to_imc_DesiredHeading
+  ros_to_imc_DesiredHeadingRate
+  ros_to_imc_DesiredPitch
+  ros_to_imc_DesiredRoll
+  ros_to_imc_DesiredSpeed
+  ros_to_imc_DesiredZ
+  imc_handle
+  md5
+  ${Boost_LIBRARIES}
+  ${rclcpp_LIBRARIES}
+)
+
+
+install(TARGETS
+  bridge_node md5 ros_to_imc_heartbeat imc_to_ros_heartbeat ros_to_imc_gpsfix ros_to_imc_goto imc_to_ros_goto imc_factory udp_link imc_handle imc_to_ros_abort imc_to_ros_plandb ros_to_imc_plandb ros_to_imc_gpsnavdata imc_to_ros_plancontrol ros_to_imc_plancontrolstate ros_to_imc_estimatedstate ros_to_imc_vehiclestate ros_to_imc_remotestate ros_to_imc_sonardata ros_to_imc_DesiredHeading ros_to_imc_DesiredHeadingRate ros_to_imc_DesiredPitch ros_to_imc_DesiredRoll ros_to_imc_DesiredSpeed ros_to_imc_DesiredZ
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
