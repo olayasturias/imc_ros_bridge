@@ -28,9 +28,22 @@ UDPLink::UDPLink(std::function<void (IMC::Message*)> recv_handler,
         const std::string& bridge_addr, const std::string& bridge_port, int imc_id, int imc_src)
     : recv_handler_(recv_handler), bridge_addr(bridge_addr), bridge_port(bridge_port), imc_id(imc_id), imc_src(imc_src)
 {
+    
+    int port = 12345;
+
+    try {
+        int port = boost::lexical_cast<int>(bridge_port);
+        // Successfully converted, do something with 'port'
+    } catch (const boost::bad_lexical_cast& e) {
+        // Handle the exception, e.g., print an error message
+        std::cerr << "Error: Invalid bridge_port value: " << bridge_port << std::endl;
+        // Optionally, provide a default port or exit the program gracefully
+    }
+
     socket.open(udp::v4());
     socket.set_option(udp::socket::reuse_address(true));
-    socket.bind(udp::endpoint(address::from_string(bridge_addr), boost::lexical_cast<int>(bridge_port)));
+    socket.bind(udp::endpoint(address::from_string(bridge_addr), port));
+
 
     should_shutdown = false;
 
