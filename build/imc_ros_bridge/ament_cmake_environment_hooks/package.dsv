@@ -1,0 +1,4 @@
+source;share/imc_ros_bridge/local_setup.bash
+source;share/imc_ros_bridge/local_setup.dsv
+source;share/imc_ros_bridge/local_setup.sh
+source;share/imc_ros_bridge/local_setup.zsh

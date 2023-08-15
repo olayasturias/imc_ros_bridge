@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_sonardata.a CMakeFiles/ros_to_imc_sonardata.dir/src/ros_to_imc/SonarData.cpp.o
+/usr/bin/ranlib libros_to_imc_sonardata.a

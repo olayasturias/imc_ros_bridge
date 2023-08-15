@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_DesiredHeadingRate.a CMakeFiles/ros_to_imc_DesiredHeadingRate.dir/src/ros_to_imc/DesiredHeadingRate.cpp.o
+/usr/bin/ranlib libros_to_imc_DesiredHeadingRate.a

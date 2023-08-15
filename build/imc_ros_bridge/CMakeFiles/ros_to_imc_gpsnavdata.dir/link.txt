@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_gpsnavdata.a CMakeFiles/ros_to_imc_gpsnavdata.dir/src/ros_to_imc/GpsNavData.cpp.o
+/usr/bin/ranlib libros_to_imc_gpsnavdata.a

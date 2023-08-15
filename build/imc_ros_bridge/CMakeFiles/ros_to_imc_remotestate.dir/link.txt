@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_remotestate.a CMakeFiles/ros_to_imc_remotestate.dir/src/ros_to_imc/RemoteState.cpp.o
+/usr/bin/ranlib libros_to_imc_remotestate.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libudp_link.a CMakeFiles/udp_link.dir/src/udp_link.cpp.o
+/usr/bin/ranlib libudp_link.a

@@ -1,0 +1,711 @@
+[0.000000] (-) TimerEvent: {}
+[0.000427] (-) JobUnselected: {'identifier': 'imc_ros_msgs'}
+[0.000595] (imc_ros_bridge) JobQueued: {'identifier': 'imc_ros_bridge', 'dependencies': OrderedDict()}
+[0.000689] (imc_ros_bridge) JobStarted: {'identifier': 'imc_ros_bridge'}
+[0.037418] (imc_ros_bridge) JobProgress: {'identifier': 'imc_ros_bridge', 'progress': 'cmake'}
+[0.052868] (imc_ros_bridge) JobProgress: {'identifier': 'imc_ros_bridge', 'progress': 'build'}
+[0.061160] (imc_ros_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge', '--', '-j16', '-l16'], 'cwd': '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olaya'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olaya'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/olaya/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.81.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/olaya/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'de_DE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2605'), ('UNREAL_ENGINE_COMPILER_DIR', '/home/olaya/dev/UnrealEngine5/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu'), ('SYSTEMD_EXEC_PID', '3166'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6085'), ('COLCON_PREFIX_PATH', '/home/olaya/ros2_ws/src/imc_ros/install'), ('UNREAL_ENGINE_DIR', '/home/olaya/dev/UnrealEngine5'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olaya'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:45100'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olaya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/olaya/.local/bin:/home/olaya/bin:/home/olaya/.sdkman/candidates/gradle/current/bin:/opt/ros/humble/bin:/home/olaya/.local/bin:/home/olaya/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/olaya-Precision-5550:@/tmp/.ICE-unix/3132,unix/olaya-Precision-5550:/tmp/.ICE-unix/3132'), ('SDKMAN_CANDIDATES_DIR', '/home/olaya/.sdkman/candidates'), ('INVOCATION_ID', 'c3b21f07cc054697827b4a1a6c4dbc5b'), ('UNREAL_ENGINE_LIBCXX_DIR', '/home/olaya/dev/UnrealEngine5/Engine/Source/ThirdParty/Unix/LibCxx'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-edf1900d38.sock'), ('SDKMAN_DIR', '/home/olaya/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CESIUM_FOR_UNREAL_DIR', '/home/olaya/dev/cesium-unreal'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.097021] (-) TimerEvent: {}
+[0.161052] (imc_ros_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.197169] (-) TimerEvent: {}
+[0.297756] (-) TimerEvent: {}
+[0.399400] (-) TimerEvent: {}
+[0.500002] (-) TimerEvent: {}
+[0.600630] (-) TimerEvent: {}
+[0.701197] (-) TimerEvent: {}
+[0.732147] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.801348] (-) TimerEvent: {}
+[0.845695] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.855873] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.879449] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.901527] (-) TimerEvent: {}
+[0.921275] (imc_ros_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.982119] (imc_ros_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001730] (-) TimerEvent: {}
+[1.102441] (-) TimerEvent: {}
+[1.203168] (-) TimerEvent: {}
+[1.208476] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.213378] (imc_ros_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.303340] (-) TimerEvent: {}
+[1.404030] (-) TimerEvent: {}
+[1.504551] (-) TimerEvent: {}
+[1.605110] (-) TimerEvent: {}
+[1.625671] (imc_ros_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.705312] (-) TimerEvent: {}
+[1.805855] (-) TimerEvent: {}
+[1.906414] (-) TimerEvent: {}
+[2.006977] (-) TimerEvent: {}
+[2.107668] (-) TimerEvent: {}
+[2.208222] (-) TimerEvent: {}
+[2.253698] (imc_ros_bridge) StdoutLine: {'line': b'-- Found imc_ros_msgs: 0.0.0 (/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs/share/imc_ros_msgs/cmake)\n'}
+[2.308428] (-) TimerEvent: {}
+[2.408982] (-) TimerEvent: {}
+[2.509564] (-) TimerEvent: {}
+[2.610208] (-) TimerEvent: {}
+[2.710784] (-) TimerEvent: {}
+[2.811337] (-) TimerEvent: {}
+[2.911920] (-) TimerEvent: {}
+[3.012467] (-) TimerEvent: {}
+[3.113009] (-) TimerEvent: {}
+[3.207359] (imc_ros_bridge) StdoutLine: {'line': b'-- Found tf2: 0.25.3 (/opt/ros/humble/share/tf2/cmake)\n'}
+[3.213167] (-) TimerEvent: {}
+[3.237151] (imc_ros_bridge) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.3 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[3.313381] (-) TimerEvent: {}
+[3.413996] (-) TimerEvent: {}
+[3.514502] (-) TimerEvent: {}
+[3.615083] (-) TimerEvent: {}
+[3.715668] (-) TimerEvent: {}
+[3.816235] (-) TimerEvent: {}
+[3.916786] (-) TimerEvent: {}
+[4.017330] (-) TimerEvent: {}
+[4.117863] (-) TimerEvent: {}
+[4.218422] (-) TimerEvent: {}
+[4.318945] (-) TimerEvent: {}
+[4.419461] (-) TimerEvent: {}
+[4.511926] (imc_ros_bridge) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.3 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[4.519624] (-) TimerEvent: {}
+[4.526918] (imc_ros_bridge) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[4.532093] (imc_ros_bridge) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.595811] (imc_ros_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.619844] (-) TimerEvent: {}
+[4.720412] (-) TimerEvent: {}
+[4.820961] (-) TimerEvent: {}
+[4.921518] (-) TimerEvent: {}
+[5.022093] (-) TimerEvent: {}
+[5.122648] (-) TimerEvent: {}
+[5.223162] (-) TimerEvent: {}
+[5.313419] (imc_ros_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.323280] (-) TimerEvent: {}
+[5.341438] (imc_ros_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_to_ros;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/external/imc-cxx;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/external/md5;$<BUILD_INTERFACE:/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include>\n'}
+[5.341895] (imc_ros_bridge) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.356871] (imc_ros_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.398764] (imc_ros_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.399192] (imc_ros_bridge) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.404151] (imc_ros_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.407454] (imc_ros_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.423424] (-) TimerEvent: {}
+[5.523927] (-) TimerEvent: {}
+[5.624481] (-) TimerEvent: {}
+[5.725034] (-) TimerEvent: {}
+[5.825589] (-) TimerEvent: {}
+[5.926139] (-) TimerEvent: {}
+[6.026720] (-) TimerEvent: {}
+[6.127297] (-) TimerEvent: {}
+[6.227858] (-) TimerEvent: {}
+[6.328418] (-) TimerEvent: {}
+[6.428971] (-) TimerEvent: {}
+[6.529545] (-) TimerEvent: {}
+[6.630087] (-) TimerEvent: {}
+[6.730699] (-) TimerEvent: {}
+[6.831258] (-) TimerEvent: {}
+[6.931840] (-) TimerEvent: {}
+[7.032377] (-) TimerEvent: {}
+[7.133086] (-) TimerEvent: {}
+[7.233757] (-) TimerEvent: {}
+[7.334391] (-) TimerEvent: {}
+[7.435055] (-) TimerEvent: {}
+[7.535597] (-) TimerEvent: {}
+[7.636193] (-) TimerEvent: {}
+[7.736825] (-) TimerEvent: {}
+[7.837360] (-) TimerEvent: {}
+[7.875412] (imc_ros_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[7.900663] (imc_ros_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge\n'}
+[7.937510] (-) TimerEvent: {}
+[8.009048] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target md5\x1b[0m\n'}
+[8.021784] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros_to_imc_goto\x1b[0m\n'}
+[8.022855] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imc_factory\x1b[0m\n'}
+[8.023746] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imc_to_ros_goto\x1b[0m\n'}
+[8.024849] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imc_to_ros_heartbeat\x1b[0m\n'}
+[8.026762] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros_to_imc_gpsnavdata\x1b[0m\n'}
+[8.028673] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros_to_imc_heartbeat\x1b[0m\n'}
+[8.029502] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imc_to_ros_abort\x1b[0m\n'}
+[8.030240] (imc_ros_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ros_to_imc_gpsfix\x1b[0m\n'}
+[8.037686] (-) TimerEvent: {}
+[8.061610] (imc_ros_bridge) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_plandb.dir/src/ros_to_imc/PlanDB.cpp.o\x1b[0m\n'}
+[8.065062] (imc_ros_bridge) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_plancontrolstate.dir/src/ros_to_imc/PlanControlState.cpp.o\x1b[0m\n'}
+[8.065777] (imc_ros_bridge) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_estimatedstate.dir/src/ros_to_imc/EstimatedState.cpp.o\x1b[0m\n'}
+[8.067703] (imc_ros_bridge) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_remotestate.dir/src/ros_to_imc/RemoteState.cpp.o\x1b[0m\n'}
+[8.073663] (imc_ros_bridge) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/imc_to_ros_plandb.dir/src/imc_to_ros/PlanDB.cpp.o\x1b[0m\n'}
+[8.086695] (imc_ros_bridge) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/imc_to_ros_plancontrol.dir/src/imc_to_ros/PlanControl.cpp.o\x1b[0m\n'}
+[8.106739] (imc_ros_bridge) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/imc_factory.dir/external/imc-cxx/IMC/Base/Factory.cpp.o\x1b[0m\n'}
+[8.114871] (imc_ros_bridge) StdoutLine: {'line': b'[ 17%] Built target md5\n'}
+[8.138013] (-) TimerEvent: {}
+[8.138991] (imc_ros_bridge) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_vehiclestate.dir/src/ros_to_imc/VehicleState.cpp.o\x1b[0m\n'}
+[8.201725] (imc_ros_bridge) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_gpsnavdata.dir/src/ros_to_imc/GpsNavData.cpp.o\x1b[0m\n'}
+[8.209882] (imc_ros_bridge) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/imc_to_ros_heartbeat.dir/src/imc_to_ros/Heartbeat.cpp.o\x1b[0m\n'}
+[8.224877] (imc_ros_bridge) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_goto.dir/src/ros_to_imc/Goto.cpp.o\x1b[0m\n'}
+[8.225774] (imc_ros_bridge) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_gpsfix.dir/src/ros_to_imc/GpsFix.cpp.o\x1b[0m\n'}
+[8.236047] (imc_ros_bridge) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/imc_to_ros_goto.dir/src/imc_to_ros/Goto.cpp.o\x1b[0m\n'}
+[8.240604] (-) TimerEvent: {}
+[8.281100] (imc_ros_bridge) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_heartbeat.dir/src/ros_to_imc/Heartbeat.cpp.o\x1b[0m\n'}
+[8.340792] (-) TimerEvent: {}
+[8.349391] (imc_ros_bridge) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/imc_to_ros_abort.dir/src/imc_to_ros/Abort.cpp.o\x1b[0m\n'}
+[8.403913] (imc_ros_bridge) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/ros_to_imc_sonardata.dir/src/ros_to_imc/SonarData.cpp.o\x1b[0m\n'}
+[8.440979] (-) TimerEvent: {}
+[8.541762] (-) TimerEvent: {}
+[8.642496] (-) TimerEvent: {}
+[8.743264] (-) TimerEvent: {}
+[8.844110] (-) TimerEvent: {}
+[8.945599] (-) TimerEvent: {}
+[9.046977] (-) TimerEvent: {}
+[9.147689] (-) TimerEvent: {}
+[9.248455] (-) TimerEvent: {}
+[9.349293] (-) TimerEvent: {}
+[9.450076] (-) TimerEvent: {}
+[9.550814] (-) TimerEvent: {}
+[9.651547] (-) TimerEvent: {}
+[9.753167] (-) TimerEvent: {}
+[9.854674] (-) TimerEvent: {}
+[9.956156] (-) TimerEvent: {}
+[10.057618] (-) TimerEvent: {}
+[10.159209] (-) TimerEvent: {}
+[10.260698] (-) TimerEvent: {}
+[10.362585] (-) TimerEvent: {}
+[10.464257] (-) TimerEvent: {}
+[10.565976] (-) TimerEvent: {}
+[10.667816] (-) TimerEvent: {}
+[10.769260] (-) TimerEvent: {}
+[10.870954] (-) TimerEvent: {}
+[10.972387] (-) TimerEvent: {}
+[11.073821] (-) TimerEvent: {}
+[11.175280] (-) TimerEvent: {}
+[11.276713] (-) TimerEvent: {}
+[11.378189] (-) TimerEvent: {}
+[11.479682] (-) TimerEvent: {}
+[11.581108] (-) TimerEvent: {}
+[11.682568] (-) TimerEvent: {}
+[11.784080] (-) TimerEvent: {}
+[11.884805] (-) TimerEvent: {}
+[11.985523] (-) TimerEvent: {}
+[12.086262] (-) TimerEvent: {}
+[12.187028] (-) TimerEvent: {}
+[12.297945] (-) TimerEvent: {}
+[12.398763] (-) TimerEvent: {}
+[12.499564] (-) TimerEvent: {}
+[12.600308] (-) TimerEvent: {}
+[12.701047] (-) TimerEvent: {}
+[12.802018] (-) TimerEvent: {}
+[12.903760] (-) TimerEvent: {}
+[13.006104] (-) TimerEvent: {}
+[13.109248] (-) TimerEvent: {}
+[13.212484] (-) TimerEvent: {}
+[13.314172] (-) TimerEvent: {}
+[13.415107] (-) TimerEvent: {}
+[13.516001] (-) TimerEvent: {}
+[13.616907] (-) TimerEvent: {}
+[13.718471] (-) TimerEvent: {}
+[13.820109] (-) TimerEvent: {}
+[13.924569] (-) TimerEvent: {}
+[14.025375] (-) TimerEvent: {}
+[14.126167] (-) TimerEvent: {}
+[14.226976] (-) TimerEvent: {}
+[14.327859] (-) TimerEvent: {}
+[14.428658] (-) TimerEvent: {}
+[14.529519] (-) TimerEvent: {}
+[14.565897] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/PlanControlState.cpp:14\x1b[m\x1b[K:\n'}
+[14.566697] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanControlState.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/plan_control_state.hpp: No such file or directory\n'}
+[14.567233] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/plan_control_state.hpp"\x1b[m\x1b[K\n'}
+[14.567700] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.568150] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[14.575767] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/RemoteState.cpp:14\x1b[m\x1b[K:\n'}
+[14.576547] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/RemoteState.hpp:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/remote_state.hpp: No such file or directory\n'}
+[14.577042] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/remote_state.hpp"\x1b[m\x1b[K\n'}
+[14.577510] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.578009] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[14.626221] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_plancontrolstate.dir/build.make:76: CMakeFiles/ros_to_imc_plancontrolstate.dir/src/ros_to_imc/PlanControlState.cpp.o] Error 1\n'}
+[14.627244] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_remotestate.dir/build.make:76: CMakeFiles/ros_to_imc_remotestate.dir/src/ros_to_imc/RemoteState.cpp.o] Error 1\n'}
+[14.627809] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/ros_to_imc_plancontrolstate.dir/all] Error 2\n'}
+[14.628522] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[14.629073] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:630: CMakeFiles/ros_to_imc_remotestate.dir/all] Error 2\n'}
+[14.629556] (-) TimerEvent: {}
+[14.731179] (-) TimerEvent: {}
+[14.831974] (-) TimerEvent: {}
+[14.932809] (-) TimerEvent: {}
+[15.033565] (-) TimerEvent: {}
+[15.134369] (-) TimerEvent: {}
+[15.235113] (-) TimerEvent: {}
+[15.335894] (-) TimerEvent: {}
+[15.436655] (-) TimerEvent: {}
+[15.537440] (-) TimerEvent: {}
+[15.638284] (-) TimerEvent: {}
+[15.739105] (-) TimerEvent: {}
+[15.839840] (-) TimerEvent: {}
+[15.940562] (-) TimerEvent: {}
+[16.041338] (-) TimerEvent: {}
+[16.142215] (-) TimerEvent: {}
+[16.243044] (-) TimerEvent: {}
+[16.332647] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/PlanDB.cpp:14\x1b[m\x1b[K:\n'}
+[16.333325] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanDB.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/plan_db.hpp: No such file or directory\n'}
+[16.333784] (imc_ros_bridge) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K<imc_ros_msgs/msg/plan_db.hpp>\x1b[m\x1b[K\n'}
+[16.334293] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.334823] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[16.343214] (-) TimerEvent: {}
+[16.367840] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/PlanControl.cpp:14\x1b[m\x1b[K:\n'}
+[16.368616] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/PlanControl.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/plan_control.hpp: No such file or directory\n'}
+[16.369137] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/plan_control.hpp"\x1b[m\x1b[K\n'}
+[16.369639] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.370085] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[16.409015] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_plandb.dir/build.make:76: CMakeFiles/ros_to_imc_plandb.dir/src/ros_to_imc/PlanDB.cpp.o] Error 1\n'}
+[16.410542] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imc_to_ros_plancontrol.dir/build.make:76: CMakeFiles/imc_to_ros_plancontrol.dir/src/imc_to_ros/PlanControl.cpp.o] Error 1\n'}
+[16.411121] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:526: CMakeFiles/imc_to_ros_plancontrol.dir/all] Error 2\n'}
+[16.411938] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:474: CMakeFiles/ros_to_imc_plandb.dir/all] Error 2\n'}
+[16.443395] (-) TimerEvent: {}
+[16.544259] (-) TimerEvent: {}
+[16.645027] (-) TimerEvent: {}
+[16.745819] (-) TimerEvent: {}
+[16.846566] (-) TimerEvent: {}
+[16.867663] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/PlanDB.hpp:20\x1b[m\x1b[K,\n'}
+[16.868787] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/PlanDB.cpp:17\x1b[m\x1b[K:\n'}
+[16.869339] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanDB.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/plan_db.hpp: No such file or directory\n'}
+[16.869903] (imc_ros_bridge) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K<imc_ros_msgs/msg/plan_db.hpp>\x1b[m\x1b[K\n'}
+[16.870394] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.870927] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[16.883608] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/EstimatedState.cpp:14\x1b[m\x1b[K:\n'}
+[16.884351] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/EstimatedState.hpp:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/estimated_state.hpp: No such file or directory\n'}
+[16.885320] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/estimated_state.hpp"\x1b[m\x1b[K\n'}
+[16.885821] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.886309] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[16.923725] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/imc_to_ros_plandb.dir/build.make:76: CMakeFiles/imc_to_ros_plandb.dir/src/imc_to_ros/PlanDB.cpp.o] Error 1\n'}
+[16.924445] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:448: CMakeFiles/imc_to_ros_plandb.dir/all] Error 2\n'}
+[16.927120] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_estimatedstate.dir/build.make:76: CMakeFiles/ros_to_imc_estimatedstate.dir/src/ros_to_imc/EstimatedState.cpp.o] Error 1\n'}
+[16.927824] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:578: CMakeFiles/ros_to_imc_estimatedstate.dir/all] Error 2\n'}
+[16.946768] (-) TimerEvent: {}
+[17.032050] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/SonarData.cpp:14\x1b[m\x1b[K:\n'}
+[17.032778] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/SonarData.hpp:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/sonar_data.hpp: No such file or directory\n'}
+[17.033289] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/sonar_data.hpp"\x1b[m\x1b[K\n'}
+[17.033770] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.034233] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[17.046957] (-) TimerEvent: {}
+[17.072167] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_sonardata.dir/build.make:76: CMakeFiles/ros_to_imc_sonardata.dir/src/ros_to_imc/SonarData.cpp.o] Error 1\n'}
+[17.073150] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/ros_to_imc_sonardata.dir/all] Error 2\n'}
+[17.100907] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/VehicleState.cpp:14\x1b[m\x1b[K:\n'}
+[17.101557] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/VehicleState.hpp:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kimc_ros_msgs/msg/vehicle_state.hpp: No such file or directory\n'}
+[17.102025] (imc_ros_bridge) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"imc_ros_msgs/msg/vehicle_state.hpp"\x1b[m\x1b[K\n'}
+[17.102431] (imc_ros_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.102865] (imc_ros_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[17.143859] (imc_ros_bridge) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ros_to_imc_vehiclestate.dir/build.make:76: CMakeFiles/ros_to_imc_vehiclestate.dir/src/ros_to_imc/VehicleState.cpp.o] Error 1\n'}
+[17.144538] (imc_ros_bridge) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:604: CMakeFiles/ros_to_imc_vehiclestate.dir/all] Error 2\n'}
+[17.147079] (-) TimerEvent: {}
+[17.247716] (-) TimerEvent: {}
+[17.348456] (-) TimerEvent: {}
+[17.449040] (-) TimerEvent: {}
+[17.549654] (-) TimerEvent: {}
+[17.650482] (-) TimerEvent: {}
+[17.751262] (-) TimerEvent: {}
+[17.852013] (-) TimerEvent: {}
+[17.952766] (-) TimerEvent: {}
+[18.053544] (-) TimerEvent: {}
+[18.154296] (-) TimerEvent: {}
+[18.255085] (-) TimerEvent: {}
+[18.355903] (-) TimerEvent: {}
+[18.456686] (-) TimerEvent: {}
+[18.557494] (-) TimerEvent: {}
+[18.658265] (-) TimerEvent: {}
+[18.759155] (-) TimerEvent: {}
+[18.859958] (-) TimerEvent: {}
+[18.960840] (-) TimerEvent: {}
+[19.061712] (-) TimerEvent: {}
+[19.162510] (-) TimerEvent: {}
+[19.263358] (-) TimerEvent: {}
+[19.364179] (-) TimerEvent: {}
+[19.464974] (-) TimerEvent: {}
+[19.565750] (-) TimerEvent: {}
+[19.666542] (-) TimerEvent: {}
+[19.767426] (-) TimerEvent: {}
+[19.868240] (-) TimerEvent: {}
+[19.969059] (-) TimerEvent: {}
+[20.069848] (-) TimerEvent: {}
+[20.170701] (-) TimerEvent: {}
+[20.271433] (-) TimerEvent: {}
+[20.372148] (-) TimerEvent: {}
+[20.472917] (-) TimerEvent: {}
+[20.573661] (-) TimerEvent: {}
+[20.674435] (-) TimerEvent: {}
+[20.775247] (-) TimerEvent: {}
+[20.876029] (-) TimerEvent: {}
+[20.976798] (-) TimerEvent: {}
+[21.077570] (-) TimerEvent: {}
+[21.178331] (-) TimerEvent: {}
+[21.279128] (-) TimerEvent: {}
+[21.379905] (-) TimerEvent: {}
+[21.480663] (-) TimerEvent: {}
+[21.581405] (-) TimerEvent: {}
+[21.682203] (-) TimerEvent: {}
+[21.783019] (-) TimerEvent: {}
+[21.883858] (-) TimerEvent: {}
+[21.984641] (-) TimerEvent: {}
+[22.085420] (-) TimerEvent: {}
+[22.186187] (-) TimerEvent: {}
+[22.287042] (-) TimerEvent: {}
+[22.387854] (-) TimerEvent: {}
+[22.489250] (-) TimerEvent: {}
+[22.590175] (-) TimerEvent: {}
+[22.691619] (-) TimerEvent: {}
+[22.792387] (-) TimerEvent: {}
+[22.893238] (-) TimerEvent: {}
+[22.994020] (-) TimerEvent: {}
+[23.094889] (-) TimerEvent: {}
+[23.196315] (-) TimerEvent: {}
+[23.297116] (-) TimerEvent: {}
+[23.397947] (-) TimerEvent: {}
+[23.498754] (-) TimerEvent: {}
+[23.599508] (-) TimerEvent: {}
+[23.700287] (-) TimerEvent: {}
+[23.801110] (-) TimerEvent: {}
+[23.901897] (-) TimerEvent: {}
+[24.002727] (-) TimerEvent: {}
+[24.103302] (-) TimerEvent: {}
+[24.203887] (-) TimerEvent: {}
+[24.304736] (-) TimerEvent: {}
+[24.406333] (-) TimerEvent: {}
+[24.507201] (-) TimerEvent: {}
+[24.607955] (-) TimerEvent: {}
+[24.708709] (-) TimerEvent: {}
+[24.809467] (-) TimerEvent: {}
+[24.910213] (-) TimerEvent: {}
+[25.011050] (-) TimerEvent: {}
+[25.111852] (-) TimerEvent: {}
+[25.212610] (-) TimerEvent: {}
+[25.313401] (-) TimerEvent: {}
+[25.414162] (-) TimerEvent: {}
+[25.514938] (-) TimerEvent: {}
+[25.615749] (-) TimerEvent: {}
+[25.716473] (-) TimerEvent: {}
+[25.817140] (-) TimerEvent: {}
+[25.917994] (-) TimerEvent: {}
+[26.018856] (-) TimerEvent: {}
+[26.119662] (-) TimerEvent: {}
+[26.220919] (-) TimerEvent: {}
+[26.321779] (-) TimerEvent: {}
+[26.422425] (-) TimerEvent: {}
+[26.523240] (-) TimerEvent: {}
+[26.623820] (-) TimerEvent: {}
+[26.724463] (-) TimerEvent: {}
+[26.825163] (-) TimerEvent: {}
+[26.865608] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[26.866126] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[26.866470] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[26.867132] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[26.867525] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[26.867833] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[26.868124] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[26.868412] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[26.868847] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[26.869355] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[26.869662] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[26.870098] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[26.870561] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[26.870966] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[26.871369] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[26.871747] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[26.872038] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[26.872299] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/Heartbeat.h:17\x1b[m\x1b[K,\n'}
+[26.872648] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/Heartbeat.cpp:14\x1b[m\x1b[K:\n'}
+[26.873116] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.873490] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[26.873774] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.925319] (-) TimerEvent: {}
+[27.025928] (-) TimerEvent: {}
+[27.037631] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[27.038449] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[27.039094] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[27.039669] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[27.040259] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[27.040872] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[27.041415] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[27.042023] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[27.042603] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[27.043171] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[27.043704] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[27.045038] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[27.045621] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[27.046152] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[27.046735] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[27.047262] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[27.047820] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[27.048365] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/Goto.h:17\x1b[m\x1b[K,\n'}
+[27.048914] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Goto.cpp:14\x1b[m\x1b[K:\n'}
+[27.049432] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.050060] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[27.050677] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.126134] (-) TimerEvent: {}
+[27.227029] (-) TimerEvent: {}
+[27.327854] (-) TimerEvent: {}
+[27.428626] (-) TimerEvent: {}
+[27.529351] (-) TimerEvent: {}
+[27.630072] (-) TimerEvent: {}
+[27.729615] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[27.730233] (-) TimerEvent: {}
+[27.730647] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[27.731131] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[27.731514] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[27.732160] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[27.732541] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[27.732916] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[27.733280] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[27.733643] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[27.734002] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[27.734365] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[27.734792] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[27.735189] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[27.735570] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[27.735946] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[27.736334] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[27.736702] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[27.737065] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/GpsFix.h:17\x1b[m\x1b[K,\n'}
+[27.737473] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/GpsFix.cpp:14\x1b[m\x1b[K:\n'}
+[27.737853] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.738261] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[27.738652] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.830620] (-) TimerEvent: {}
+[27.931622] (-) TimerEvent: {}
+[27.949606] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[27.950367] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[27.950956] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[27.951420] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[27.951836] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[27.952292] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[27.952695] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[27.953108] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[27.953587] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[27.954018] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[27.954431] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[27.954898] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[27.955302] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[27.955695] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[27.956086] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[27.956505] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[27.956929] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[27.957337] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/Goto.h:17\x1b[m\x1b[K,\n'}
+[27.957750] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/Goto.cpp:14\x1b[m\x1b[K:\n'}
+[27.958421] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.958953] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[27.959390] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.031797] (-) TimerEvent: {}
+[28.132508] (-) TimerEvent: {}
+[28.233509] (-) TimerEvent: {}
+[28.334306] (-) TimerEvent: {}
+[28.435139] (-) TimerEvent: {}
+[28.535942] (-) TimerEvent: {}
+[28.633285] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/Heartbeat.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool ros_to_imc::convert(const ROS_MSG&, IMC_MSG&) [with ROS_MSG = std_msgs::msg::Empty_<std::allocator<void> >; IMC_MSG = IMC::Heartbeat]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.634041] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/Heartbeat.cpp:19:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kros_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[28.634603] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(\x1b[01;35m\x1b[Kconst std_msgs::msg::Empty& ros_msg\x1b[m\x1b[K, IMC::Heartbeat& imc_msg)\n'}
+[28.635178] (imc_ros_bridge) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[28.635670] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/Heartbeat.cpp:19:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kimc_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[28.636142] (-) TimerEvent: {}
+[28.636616] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(const std_msgs::msg::Empty& ros_msg, \x1b[01;35m\x1b[KIMC::Heartbeat& imc_msg\x1b[m\x1b[K)\n'}
+[28.637188] (imc_ros_bridge) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[28.736366] (-) TimerEvent: {}
+[28.837106] (-) TimerEvent: {}
+[28.838297] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[28.838993] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[28.839517] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[28.840331] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[28.840819] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[28.841294] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[28.841772] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[28.842550] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[28.843061] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[28.843534] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[28.844016] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[28.844673] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[28.845589] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[28.846451] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[28.847026] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[28.847527] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[28.848230] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[28.848734] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/Heartbeat.h:17\x1b[m\x1b[K,\n'}
+[28.849292] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Heartbeat.cpp:14\x1b[m\x1b[K:\n'}
+[28.849761] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[28.850728] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[28.851244] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.937315] (-) TimerEvent: {}
+[29.038146] (-) TimerEvent: {}
+[29.139000] (-) TimerEvent: {}
+[29.239745] (-) TimerEvent: {}
+[29.340504] (-) TimerEvent: {}
+[29.441263] (-) TimerEvent: {}
+[29.521118] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[29.521869] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[29.522403] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[29.522939] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[29.523445] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[29.523938] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[29.524417] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[29.524890] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[29.525370] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[29.525838] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[29.526320] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[29.526860] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[29.527351] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[29.527824] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[29.528299] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[29.528779] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[29.529251] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[29.529722] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/GpsNavData.h:17\x1b[m\x1b[K,\n'}
+[29.530276] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/GpsNavData.cpp:14\x1b[m\x1b[K:\n'}
+[29.530839] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[29.531347] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[29.531831] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[29.541441] (-) TimerEvent: {}
+[29.642205] (-) TimerEvent: {}
+[29.742979] (-) TimerEvent: {}
+[29.843737] (-) TimerEvent: {}
+[29.944582] (-) TimerEvent: {}
+[30.045429] (-) TimerEvent: {}
+[30.146230] (-) TimerEvent: {}
+[30.247086] (-) TimerEvent: {}
+[30.347937] (-) TimerEvent: {}
+[30.448762] (-) TimerEvent: {}
+[30.549584] (-) TimerEvent: {}
+[30.650589] (-) TimerEvent: {}
+[30.710256] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Heartbeat.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool imc_to_ros::convert(const IMC_MSG&, ROS_MSG&) [with IMC_MSG = IMC::Heartbeat; ROS_MSG = std_msgs::msg::Empty_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.711150] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Heartbeat.cpp:19:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kimc_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.711766] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(\x1b[01;35m\x1b[Kconst IMC::Heartbeat& imc_msg\x1b[m\x1b[K, std_msgs::msg::Empty& ros_msg)\n'}
+[30.712283] (imc_ros_bridge) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.712775] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Heartbeat.cpp:19:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kros_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.713265] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(const IMC::Heartbeat& imc_msg, \x1b[01;35m\x1b[Kstd_msgs::msg::Empty& ros_msg\x1b[m\x1b[K)\n'}
+[30.713760] (imc_ros_bridge) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[30.750788] (-) TimerEvent: {}
+[30.851648] (-) TimerEvent: {}
+[30.952424] (-) TimerEvent: {}
+[31.053232] (-) TimerEvent: {}
+[31.154105] (-) TimerEvent: {}
+[31.187298] (imc_ros_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[31.188103] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[31.188665] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[31.189240] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[31.189819] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[31.190376] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[31.191028] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[31.191564] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/time_clock.hpp:17\x1b[m\x1b[K,\n'}
+[31.192086] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10\x1b[m\x1b[K,\n'}
+[31.192603] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/time_traits.hpp:23\x1b[m\x1b[K,\n'}
+[31.193129] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22\x1b[m\x1b[K,\n'}
+[31.193669] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29\x1b[m\x1b[K,\n'}
+[31.194236] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio/basic_deadline_timer.hpp:25\x1b[m\x1b[K,\n'}
+[31.194854] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/asio.hpp:25\x1b[m\x1b[K,\n'}
+[31.195438] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17\x1b[m\x1b[K,\n'}
+[31.195980] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18\x1b[m\x1b[K,\n'}
+[31.196509] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_ros_bridge_server.hpp:17\x1b[m\x1b[K,\n'}
+[31.197076] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/Abort.h:17\x1b[m\x1b[K,\n'}
+[31.197588] (imc_ros_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Abort.cpp:14\x1b[m\x1b[K:\n'}
+[31.198047] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.198539] (imc_ros_bridge) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[31.199070] (imc_ros_bridge) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.254316] (-) TimerEvent: {}
+[31.355720] (-) TimerEvent: {}
+[31.456410] (-) TimerEvent: {}
+[31.557275] (-) TimerEvent: {}
+[31.658048] (-) TimerEvent: {}
+[31.759229] (-) TimerEvent: {}
+[31.860317] (-) TimerEvent: {}
+[31.960985] (-) TimerEvent: {}
+[32.061815] (-) TimerEvent: {}
+[32.164577] (-) TimerEvent: {}
+[32.265454] (-) TimerEvent: {}
+[32.366429] (-) TimerEvent: {}
+[32.467254] (-) TimerEvent: {}
+[32.568003] (-) TimerEvent: {}
+[32.669119] (-) TimerEvent: {}
+[32.769929] (-) TimerEvent: {}
+[32.870782] (-) TimerEvent: {}
+[32.971600] (-) TimerEvent: {}
+[33.072631] (-) TimerEvent: {}
+[33.173410] (-) TimerEvent: {}
+[33.274190] (-) TimerEvent: {}
+[33.375042] (-) TimerEvent: {}
+[33.476547] (-) TimerEvent: {}
+[33.577525] (-) TimerEvent: {}
+[33.678403] (-) TimerEvent: {}
+[33.719912] (imc_ros_bridge) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX static library libros_to_imc_heartbeat.a\x1b[0m\n'}
+[33.778595] (-) TimerEvent: {}
+[33.800937] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Abort.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool imc_to_ros::convert(const IMC_MSG&, ROS_MSG&) [with IMC_MSG = IMC::Abort; ROS_MSG = std_msgs::msg::Empty_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.801509] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Abort.cpp:19:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kimc_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.801879] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(\x1b[01;35m\x1b[Kconst IMC::Abort& imc_msg\x1b[m\x1b[K, std_msgs::msg::Empty& ros_msg)\n'}
+[33.802188] (imc_ros_bridge) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[33.802488] (imc_ros_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/Abort.cpp:19:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kros_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.802860] (imc_ros_bridge) StderrLine: {'line': b'   19 | bool convert(const IMC::Abort& imc_msg, \x1b[01;35m\x1b[Kstd_msgs::msg::Empty& ros_msg\x1b[m\x1b[K)\n'}
+[33.803134] (imc_ros_bridge) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[33.878811] (-) TimerEvent: {}
+[33.980105] (-) TimerEvent: {}
+[33.987404] (imc_ros_bridge) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX static library libimc_to_ros_goto.a\x1b[0m\n'}
+[33.998001] (imc_ros_bridge) StdoutLine: {'line': b'[ 38%] Built target ros_to_imc_heartbeat\n'}
+[34.080323] (-) TimerEvent: {}
+[34.180995] (-) TimerEvent: {}
+[34.229511] (imc_ros_bridge) StdoutLine: {'line': b'[ 38%] Built target imc_to_ros_goto\n'}
+[34.281188] (-) TimerEvent: {}
+[34.382045] (-) TimerEvent: {}
+[34.482830] (-) TimerEvent: {}
+[34.583587] (-) TimerEvent: {}
+[34.678785] (imc_ros_bridge) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library libros_to_imc_gpsfix.a\x1b[0m\n'}
+[34.683736] (-) TimerEvent: {}
+[34.784380] (-) TimerEvent: {}
+[34.885140] (-) TimerEvent: {}
+[34.885917] (imc_ros_bridge) StdoutLine: {'line': b'[ 40%] Built target ros_to_imc_gpsfix\n'}
+[34.985341] (-) TimerEvent: {}
+[35.086140] (-) TimerEvent: {}
+[35.133675] (imc_ros_bridge) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libros_to_imc_goto.a\x1b[0m\n'}
+[35.186362] (-) TimerEvent: {}
+[35.287258] (-) TimerEvent: {}
+[35.351346] (imc_ros_bridge) StdoutLine: {'line': b'[ 42%] Built target ros_to_imc_goto\n'}
+[35.387437] (-) TimerEvent: {}
+[35.488075] (-) TimerEvent: {}
+[35.588666] (-) TimerEvent: {}
+[35.689414] (-) TimerEvent: {}
+[35.790164] (-) TimerEvent: {}
+[35.890800] (-) TimerEvent: {}
+[35.991366] (-) TimerEvent: {}
+[36.092000] (-) TimerEvent: {}
+[36.192777] (-) TimerEvent: {}
+[36.197098] (imc_ros_bridge) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX static library libimc_to_ros_heartbeat.a\x1b[0m\n'}
+[36.292969] (-) TimerEvent: {}
+[36.365105] (imc_ros_bridge) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX static library libros_to_imc_gpsnavdata.a\x1b[0m\n'}
+[36.387982] (imc_ros_bridge) StdoutLine: {'line': b'[ 46%] Built target imc_to_ros_heartbeat\n'}
+[36.393152] (-) TimerEvent: {}
+[36.493751] (-) TimerEvent: {}
+[36.554432] (imc_ros_bridge) StdoutLine: {'line': b'[ 46%] Built target ros_to_imc_gpsnavdata\n'}
+[36.593936] (-) TimerEvent: {}
+[36.694602] (-) TimerEvent: {}
+[36.795192] (-) TimerEvent: {}
+[36.895796] (-) TimerEvent: {}
+[36.996397] (-) TimerEvent: {}
+[37.096945] (-) TimerEvent: {}
+[37.197579] (-) TimerEvent: {}
+[37.298125] (-) TimerEvent: {}
+[37.398739] (-) TimerEvent: {}
+[37.499286] (-) TimerEvent: {}
+[37.599894] (-) TimerEvent: {}
+[37.700460] (-) TimerEvent: {}
+[37.801054] (-) TimerEvent: {}
+[37.901564] (-) TimerEvent: {}
+[38.002260] (-) TimerEvent: {}
+[38.102828] (-) TimerEvent: {}
+[38.203412] (-) TimerEvent: {}
+[38.223191] (imc_ros_bridge) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX static library libimc_to_ros_abort.a\x1b[0m\n'}
+[38.303595] (-) TimerEvent: {}
+[38.404173] (-) TimerEvent: {}
+[38.404743] (imc_ros_bridge) StdoutLine: {'line': b'[ 48%] Built target imc_to_ros_abort\n'}
+[38.504345] (-) TimerEvent: {}
+[38.604872] (-) TimerEvent: {}
+[38.705377] (-) TimerEvent: {}
+[38.805935] (-) TimerEvent: {}
+[38.906485] (-) TimerEvent: {}
+[39.007115] (-) TimerEvent: {}
+[39.107657] (-) TimerEvent: {}
+[39.208227] (-) TimerEvent: {}
+[39.308815] (-) TimerEvent: {}
+[39.399357] (imc_ros_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libimc_factory.a\x1b[0m\n'}
+[39.408975] (-) TimerEvent: {}
+[39.509466] (-) TimerEvent: {}
+[39.610011] (-) TimerEvent: {}
+[39.710540] (-) TimerEvent: {}
+[39.792402] (imc_ros_bridge) StdoutLine: {'line': b'[ 50%] Built target imc_factory\n'}
+[39.795086] (imc_ros_bridge) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[39.799865] (imc_ros_bridge) CommandEnded: {'returncode': 2}
+[39.810709] (-) TimerEvent: {}
+[39.911126] (-) TimerEvent: {}
+[40.011629] (-) TimerEvent: {}
+[40.103703] (imc_ros_bridge) JobEnded: {'identifier': 'imc_ros_bridge', 'rc': 2}
+[40.111790] (-) TimerEvent: {}
+[40.114876] (-) EventReactorShutdown: {}

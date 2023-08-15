@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_DesiredHeading.a CMakeFiles/ros_to_imc_DesiredHeading.dir/src/ros_to_imc/DesiredHeading.cpp.o
+/usr/bin/ranlib libros_to_imc_DesiredHeading.a

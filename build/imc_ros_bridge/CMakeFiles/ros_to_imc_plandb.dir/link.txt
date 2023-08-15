@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_plandb.a CMakeFiles/ros_to_imc_plandb.dir/src/ros_to_imc/PlanDB.cpp.o
+/usr/bin/ranlib libros_to_imc_plandb.a

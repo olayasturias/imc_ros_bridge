@@ -1,0 +1,218 @@
+[0.069s] Invoking command in '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge -- -j16 -l16
+[0.153s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.749s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.873s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.883s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.907s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.951s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.015s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.263s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.268s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.730s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.395s] -- Found imc_ros_msgs: 0.0.0 (/home/olaya/ros2_ws/src/imc_ros/install/imc_ros_msgs/share/imc_ros_msgs/cmake)
+[3.492s] -- Found tf2: 0.25.3 (/opt/ros/humble/share/tf2/cmake)
+[3.523s] -- Found tf2_ros: 0.25.3 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.928s] -- Found tf2_geometry_msgs: 0.25.3 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.944s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.949s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[5.013s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.825s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.858s] -- Configured cppcheck include dirs: /home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_to_ros;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/external/imc-cxx;/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/external/md5;$<BUILD_INTERFACE:/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include>
+[5.858s] -- Configured cppcheck exclude dirs and/or files: 
+[5.874s] -- Added test 'lint_cmake' to check CMake code style
+[5.919s] -- Added test 'uncrustify' to check C / C++ code style
+[5.919s] -- Configured uncrustify additional arguments: 
+[5.925s] -- Added test 'xmllint' to check XML markup files
+[5.928s] -- Configuring done
+[8.684s] -- Generating done
+[8.702s] -- Build files have been written to: /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge
+[8.815s] [35m[1mConsolidate compiler generated dependencies of target md5[0m
+[8.823s] [35m[1mConsolidate compiler generated dependencies of target ros_to_imc_heartbeat[0m
+[8.824s] [35m[1mConsolidate compiler generated dependencies of target imc_to_ros_heartbeat[0m
+[8.825s] [35m[1mConsolidate compiler generated dependencies of target ros_to_imc_gpsfix[0m
+[8.825s] [35m[1mConsolidate compiler generated dependencies of target ros_to_imc_goto[0m
+[8.826s] [35m[1mConsolidate compiler generated dependencies of target imc_to_ros_goto[0m
+[8.829s] [35m[1mConsolidate compiler generated dependencies of target ros_to_imc_gpsnavdata[0m
+[8.830s] [35m[1mConsolidate compiler generated dependencies of target imc_to_ros_abort[0m
+[8.833s] [35m[1mConsolidate compiler generated dependencies of target imc_factory[0m
+[8.864s] [  1%] [32mBuilding CXX object CMakeFiles/imc_to_ros_plancontrol.dir/src/imc_to_ros/PlanControl.cpp.o[0m
+[8.868s] [  5%] [32mBuilding CXX object CMakeFiles/ros_to_imc_estimatedstate.dir/src/ros_to_imc/EstimatedState.cpp.o[0m
+[8.869s] [  5%] [32mBuilding CXX object CMakeFiles/ros_to_imc_plandb.dir/src/ros_to_imc/PlanDB.cpp.o[0m
+[8.880s] [  7%] [32mBuilding CXX object CMakeFiles/ros_to_imc_plancontrolstate.dir/src/ros_to_imc/PlanControlState.cpp.o[0m
+[8.884s] [  9%] [32mBuilding CXX object CMakeFiles/imc_to_ros_plandb.dir/src/imc_to_ros/PlanDB.cpp.o[0m
+[8.909s] [ 11%] [32mBuilding CXX object CMakeFiles/ros_to_imc_vehiclestate.dir/src/ros_to_imc/VehicleState.cpp.o[0m
+[8.912s] [ 13%] [32mBuilding CXX object CMakeFiles/ros_to_imc_remotestate.dir/src/ros_to_imc/RemoteState.cpp.o[0m
+[8.933s] [ 17%] Built target md5
+[9.004s] [ 21%] Built target imc_factory
+[9.039s] [ 25%] Built target ros_to_imc_heartbeat
+[9.044s] [ 28%] Built target imc_to_ros_abort
+[9.055s] [ 32%] Built target ros_to_imc_gpsfix
+[9.060s] [ 36%] Built target ros_to_imc_goto
+[9.077s] [ 40%] Built target imc_to_ros_goto
+[9.093s] [ 44%] Built target imc_to_ros_heartbeat
+[9.151s] [ 48%] Built target ros_to_imc_gpsnavdata
+[9.187s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredHeadingRate.dir/src/ros_to_imc/DesiredHeadingRate.cpp.o[0m
+[9.187s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_to_imc_sonardata.dir/src/ros_to_imc/SonarData.cpp.o[0m
+[9.209s] [ 53%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredHeading.dir/src/ros_to_imc/DesiredHeading.cpp.o[0m
+[9.241s] [ 55%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredZ.dir/src/ros_to_imc/DesiredZ.cpp.o[0m
+[9.243s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredSpeed.dir/src/ros_to_imc/DesiredSpeed.cpp.o[0m
+[9.246s] [ 59%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredPitch.dir/src/ros_to_imc/DesiredPitch.cpp.o[0m
+[9.262s] [35m[1mConsolidate compiler generated dependencies of target udp_link[0m
+[9.279s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_to_imc_DesiredRoll.dir/src/ros_to_imc/DesiredRoll.cpp.o[0m
+[9.513s] [ 65%] Built target udp_link
+[9.608s] [ 67%] [32mBuilding CXX object CMakeFiles/imc_handle.dir/src/imc_handle.cpp.o[0m
+[15.610s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredHeadingRate.cpp:14[m[K:
+[15.611s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredHeadingRate.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_heading_rate.hpp: No such file or directory
+[15.611s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_heading_rate.hpp"[m[K
+[15.612s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.612s] compilation terminated.
+[15.645s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredRoll.cpp:14[m[K:
+[15.645s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredRoll.h:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_roll.hpp: No such file or directory
+[15.645s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_roll.hpp"[m[K
+[15.646s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.646s] compilation terminated.
+[15.651s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredHeadingRate.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredHeadingRate.dir/src/ros_to_imc/DesiredHeadingRate.cpp.o] Error 1
+[15.652s] gmake[1]: *** [CMakeFiles/Makefile2:708: CMakeFiles/ros_to_imc_DesiredHeadingRate.dir/all] Error 2
+[15.653s] gmake[1]: *** Waiting for unfinished jobs....
+[15.686s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredRoll.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredRoll.dir/src/ros_to_imc/DesiredRoll.cpp.o] Error 1
+[15.687s] gmake[1]: *** [CMakeFiles/Makefile2:760: CMakeFiles/ros_to_imc_DesiredRoll.dir/all] Error 2
+[15.818s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/SonarData.cpp:14[m[K:
+[15.819s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/SonarData.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/sonar_data.hpp: No such file or directory
+[15.819s]    18 | #include [01;31m[K"imc_ros_msgs/msg/sonar_data.hpp"[m[K
+[15.819s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.820s] compilation terminated.
+[15.855s] gmake[2]: *** [CMakeFiles/ros_to_imc_sonardata.dir/build.make:76: CMakeFiles/ros_to_imc_sonardata.dir/src/ros_to_imc/SonarData.cpp.o] Error 1
+[15.856s] gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/ros_to_imc_sonardata.dir/all] Error 2
+[15.943s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/VehicleState.cpp:14[m[K:
+[15.943s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/VehicleState.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/vehicle_state.hpp: No such file or directory
+[15.944s]    18 | #include [01;31m[K"imc_ros_msgs/msg/vehicle_state.hpp"[m[K
+[15.944s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.945s] compilation terminated.
+[15.981s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/PlanControl.cpp:14[m[K:
+[15.981s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/PlanControl.h:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/plan_control.hpp: No such file or directory
+[15.981s]    18 | #include [01;31m[K"imc_ros_msgs/msg/plan_control.hpp"[m[K
+[15.982s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.982s] compilation terminated.
+[15.991s] gmake[2]: *** [CMakeFiles/ros_to_imc_vehiclestate.dir/build.make:76: CMakeFiles/ros_to_imc_vehiclestate.dir/src/ros_to_imc/VehicleState.cpp.o] Error 1
+[15.992s] gmake[1]: *** [CMakeFiles/Makefile2:604: CMakeFiles/ros_to_imc_vehiclestate.dir/all] Error 2
+[16.008s] gmake[2]: *** [CMakeFiles/imc_to_ros_plancontrol.dir/build.make:76: CMakeFiles/imc_to_ros_plancontrol.dir/src/imc_to_ros/PlanControl.cpp.o] Error 1
+[16.008s] gmake[1]: *** [CMakeFiles/Makefile2:526: CMakeFiles/imc_to_ros_plancontrol.dir/all] Error 2
+[16.176s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredHeading.cpp:14[m[K:
+[16.177s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredHeading.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_heading.hpp: No such file or directory
+[16.177s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_heading.hpp"[m[K
+[16.178s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.178s] compilation terminated.
+[16.183s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredPitch.cpp:14[m[K:
+[16.184s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredPitch.h:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_pitch.hpp: No such file or directory
+[16.184s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_pitch.hpp"[m[K
+[16.185s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.185s] compilation terminated.
+[16.213s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredHeading.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredHeading.dir/src/ros_to_imc/DesiredHeading.cpp.o] Error 1
+[16.213s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredPitch.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredPitch.dir/src/ros_to_imc/DesiredPitch.cpp.o] Error 1
+[16.214s] gmake[1]: *** [CMakeFiles/Makefile2:734: CMakeFiles/ros_to_imc_DesiredPitch.dir/all] Error 2
+[16.214s] gmake[1]: *** [CMakeFiles/Makefile2:682: CMakeFiles/ros_to_imc_DesiredHeading.dir/all] Error 2
+[16.294s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/PlanControlState.cpp:14[m[K:
+[16.294s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanControlState.h:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/plan_control_state.hpp: No such file or directory
+[16.295s]    18 | #include [01;31m[K"imc_ros_msgs/msg/plan_control_state.hpp"[m[K
+[16.295s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.296s] compilation terminated.
+[16.319s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/RemoteState.cpp:14[m[K:
+[16.320s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/RemoteState.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/remote_state.hpp: No such file or directory
+[16.320s]    18 | #include [01;31m[K"imc_ros_msgs/msg/remote_state.hpp"[m[K
+[16.321s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.321s] compilation terminated.
+[16.325s] gmake[2]: *** [CMakeFiles/ros_to_imc_plancontrolstate.dir/build.make:76: CMakeFiles/ros_to_imc_plancontrolstate.dir/src/ros_to_imc/PlanControlState.cpp.o] Error 1
+[16.326s] gmake[1]: *** [CMakeFiles/Makefile2:552: CMakeFiles/ros_to_imc_plancontrolstate.dir/all] Error 2
+[16.327s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/EstimatedState.cpp:14[m[K:
+[16.327s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/EstimatedState.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/estimated_state.hpp: No such file or directory
+[16.328s]    18 | #include [01;31m[K"imc_ros_msgs/msg/estimated_state.hpp"[m[K
+[16.328s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.329s] compilation terminated.
+[16.354s] gmake[2]: *** [CMakeFiles/ros_to_imc_remotestate.dir/build.make:76: CMakeFiles/ros_to_imc_remotestate.dir/src/ros_to_imc/RemoteState.cpp.o] Error 1
+[16.355s] gmake[1]: *** [CMakeFiles/Makefile2:630: CMakeFiles/ros_to_imc_remotestate.dir/all] Error 2
+[16.359s] gmake[2]: *** [CMakeFiles/ros_to_imc_estimatedstate.dir/build.make:76: CMakeFiles/ros_to_imc_estimatedstate.dir/src/ros_to_imc/EstimatedState.cpp.o] Error 1
+[16.359s] gmake[1]: *** [CMakeFiles/Makefile2:578: CMakeFiles/ros_to_imc_estimatedstate.dir/all] Error 2
+[16.478s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredSpeed.cpp:14[m[K:
+[16.479s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredSpeed.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_speed.hpp: No such file or directory
+[16.479s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_speed.hpp"[m[K
+[16.479s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.480s] compilation terminated.
+[16.512s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredSpeed.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredSpeed.dir/src/ros_to_imc/DesiredSpeed.cpp.o] Error 1
+[16.513s] gmake[1]: *** [CMakeFiles/Makefile2:786: CMakeFiles/ros_to_imc_DesiredSpeed.dir/all] Error 2
+[16.534s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/PlanDB.cpp:14[m[K:
+[16.534s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanDB.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/plan_db.hpp: No such file or directory
+[16.535s]    20 | #include [01;31m[K<imc_ros_msgs/msg/plan_db.hpp>[m[K
+[16.535s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.535s] compilation terminated.
+[16.548s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/imc_to_ros/PlanDB.hpp:20[m[K,
+[16.549s]                  from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_to_ros/PlanDB.cpp:17[m[K:
+[16.549s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/PlanDB.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/plan_db.hpp: No such file or directory
+[16.550s]    20 | #include [01;31m[K<imc_ros_msgs/msg/plan_db.hpp>[m[K
+[16.550s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.550s] compilation terminated.
+[16.562s] gmake[2]: *** [CMakeFiles/ros_to_imc_plandb.dir/build.make:76: CMakeFiles/ros_to_imc_plandb.dir/src/ros_to_imc/PlanDB.cpp.o] Error 1
+[16.562s] gmake[1]: *** [CMakeFiles/Makefile2:474: CMakeFiles/ros_to_imc_plandb.dir/all] Error 2
+[16.574s] gmake[2]: *** [CMakeFiles/imc_to_ros_plandb.dir/build.make:76: CMakeFiles/imc_to_ros_plandb.dir/src/imc_to_ros/PlanDB.cpp.o] Error 1
+[16.574s] gmake[1]: *** [CMakeFiles/Makefile2:448: CMakeFiles/imc_to_ros_plandb.dir/all] Error 2
+[16.653s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/ros_to_imc/DesiredZ.cpp:14[m[K:
+[16.653s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_ros_bridge/ros_to_imc/DesiredZ.hpp:18:10:[m[K [01;31m[Kfatal error: [m[Kimc_ros_msgs/msg/desired_z.hpp: No such file or directory
+[16.654s]    18 | #include [01;31m[K"imc_ros_msgs/msg/desired_z.hpp"[m[K
+[16.654s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.655s] compilation terminated.
+[16.679s] gmake[2]: *** [CMakeFiles/ros_to_imc_DesiredZ.dir/build.make:76: CMakeFiles/ros_to_imc_DesiredZ.dir/src/ros_to_imc/DesiredZ.cpp.o] Error 1
+[16.680s] gmake[1]: *** [CMakeFiles/Makefile2:812: CMakeFiles/ros_to_imc_DesiredZ.dir/all] Error 2
+[20.206s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[20.206s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[20.207s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[20.207s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[20.207s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[20.208s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[20.208s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[20.208s]                  from [01m[K/usr/include/boost/date_time/time_clock.hpp:17[m[K,
+[20.209s]                  from [01m[K/usr/include/boost/date_time/posix_time/posix_time_types.hpp:10[m[K,
+[20.209s]                  from [01m[K/usr/include/boost/asio/time_traits.hpp:23[m[K,
+[20.210s]                  from [01m[K/usr/include/boost/asio/detail/timer_queue_ptime.hpp:22[m[K,
+[20.210s]                  from [01m[K/usr/include/boost/asio/detail/deadline_timer_service.hpp:29[m[K,
+[20.210s]                  from [01m[K/usr/include/boost/asio/basic_deadline_timer.hpp:25[m[K,
+[20.211s]                  from [01m[K/usr/include/boost/asio.hpp:25[m[K,
+[20.211s]                  from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_udp_link/udp_link.h:17[m[K,
+[20.211s]                  from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:18[m[K,
+[20.212s]                  from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:14[m[K:
+[20.212s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[20.213s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[20.213s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[27.874s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:14[m[K:
+[27.874s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:[m[K In constructor ‘[01m[KIMCHandle::IMCHandle(const string&, const string&, const string&, const string&, int, int)[m[K’:
+[27.874s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:33:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KIMCHandle::udp_link[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.875s]    33 |     UDPLink [01;35m[Kudp_link[m[K;
+[27.875s]       |             [01;35m[K^~~~~~~~[m[K
+[27.875s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:29:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::string IMCHandle::neptus_addr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.876s]    29 |     std::string [01;35m[Kneptus_addr[m[K;
+[27.876s]       |                 [01;35m[K^~~~~~~~~~~[m[K
+[27.876s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:28:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.877s]    28 | [01;35m[KIMCHandle[m[K::IMCHandle(const std::string& bridge_tcp_addr,
+[27.877s]       | [01;35m[K^~~~~~~~~[m[K
+[27.877s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:14[m[K:
+[27.877s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:29:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KIMCHandle::neptus_addr[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.878s]    29 |     std::string [01;35m[Kneptus_addr[m[K;
+[27.878s]       |                 [01;35m[K^~~~~~~~~~~[m[K
+[27.878s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:27:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::string IMCHandle::bridge_tcp_addr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.878s]    27 |     std::string [01;35m[Kbridge_tcp_addr[m[K;
+[27.879s]       |                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[27.879s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:28:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.879s]    28 | [01;35m[KIMCHandle[m[K::IMCHandle(const std::string& bridge_tcp_addr,
+[27.879s]       | [01;35m[K^~~~~~~~~[m[K
+[27.880s] In file included from [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:14[m[K:
+[27.880s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:28:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KIMCHandle::bridge_tcp_port[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.880s]    28 |     std::string [01;35m[Kbridge_tcp_port[m[K;
+[27.881s]       |                 [01;35m[K^~~~~~~~~~~~~~~[m[K
+[27.881s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/include/imc_tcp_link/imc_handle.h:24:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::string IMCHandle::sys_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.881s]    24 |     std::string [01;35m[Ksys_name[m[K;
+[27.881s]       |                 [01;35m[K^~~~~~~~[m[K
+[27.882s] [01m[K/home/olaya/ros2_ws/src/imc_ros/imc_ros_bridge/src/imc_handle.cpp:28:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[27.882s]    28 | [01;35m[KIMCHandle[m[K::IMCHandle(const std::string& bridge_tcp_addr,
+[27.882s]       | [01;35m[K^~~~~~~~~[m[K
+[32.213s] [ 69%] [32m[1mLinking CXX static library libimc_handle.a[0m
+[32.406s] [ 69%] Built target imc_handle
+[32.409s] gmake: *** [Makefile:146: all] Error 2
+[32.415s] Invoked command in '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge -- -j16 -l16

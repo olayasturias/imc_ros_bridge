@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimc_to_ros_plancontrol.a CMakeFiles/imc_to_ros_plancontrol.dir/src/imc_to_ros/PlanControl.cpp.o
+/usr/bin/ranlib libimc_to_ros_plancontrol.a

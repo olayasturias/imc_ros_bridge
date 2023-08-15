@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimc_to_ros_plandb.a CMakeFiles/imc_to_ros_plandb.dir/src/imc_to_ros/PlanDB.cpp.o
+/usr/bin/ranlib libimc_to_ros_plandb.a

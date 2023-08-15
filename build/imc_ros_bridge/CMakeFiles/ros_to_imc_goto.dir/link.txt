@@ -1,0 +1,2 @@
+/usr/bin/ar qc libros_to_imc_goto.a CMakeFiles/ros_to_imc_goto.dir/src/ros_to_imc/Goto.cpp.o
+/usr/bin/ranlib libros_to_imc_goto.a

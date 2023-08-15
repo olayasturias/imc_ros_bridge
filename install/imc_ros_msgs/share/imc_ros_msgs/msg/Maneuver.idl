@@ -1,0 +1,80 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from imc_ros_msgs/msg/Maneuver.msg
+// generated code does not contain a copyright notice
+
+#include "imc_ros_msgs/msg/PolygonVertex.idl"
+
+module imc_ros_msgs {
+  module msg {
+    module Maneuver_Constants {
+      const uint8 Z_NONE = 0;
+      @verbatim (language="comment", text=
+        "Depth.")
+      const uint8 Z_DEPTH = 1;
+      @verbatim (language="comment", text=
+        "Altitude.")
+      const uint8 Z_ALTITUDE = 2;
+      @verbatim (language="comment", text=
+        "Height.")
+      const uint8 Z_HEIGHT = 3;
+      @verbatim (language="comment", text=
+        "Speed Units." "\n"        "Meters per second.")
+      const uint8 SUNITS_METERS_PS = 0;
+      @verbatim (language="comment", text=
+        "RPM.")
+      const uint8 SUNITS_RPM = 1;
+      @verbatim (language="comment", text=
+        "Percentage.")
+      const uint8 SUNITS_PERCENTAGE = 2;
+    };
+    @verbatim (language="comment", text=
+      "Z Units." "\n"
+      "None.")
+    struct Maneuver {
+      @verbatim (language="comment", text=
+        "many IMC maneuvers should fit in this message" "\n"
+        "and we should just decide what to do with the data" "\n"
+        "depending on the maneuver name or id" "\n"
+        "i will take the IMC/Spec/Goto maneuver as my basis")
+      string maneuver_name;
+
+      uint16 maneuver_imc_id;
+
+      @verbatim (language="comment", text=
+        "450 GOTO")
+      double lat;
+
+      double lon;
+
+      float z;
+
+      uint8 z_units;
+
+      float speed;
+
+      uint8 speed_units;
+
+      float roll;
+
+      float pitch;
+
+      float yaw;
+
+      uint16 timeout;
+
+      string custom_string;
+
+      @verbatim (language="comment", text=
+        "489 SAMPLE that are not in GOTO")
+      uint8 syringe0;
+
+      uint8 syringe1;
+
+      uint8 syringe2;
+
+      @verbatim (language="comment", text=
+        "473 COVER_AREA that are not in GOTO")
+      sequence<imc_ros_msgs::msg::PolygonVertex> polygon;
+    };
+  };
+};

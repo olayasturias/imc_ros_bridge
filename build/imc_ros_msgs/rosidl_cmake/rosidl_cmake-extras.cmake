@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(imc_ros_msgs_IDL_FILES "msg/PlanControl.idl;msg/PlanControlState.idl;msg/VehicleState.idl;msg/EstimatedState.idl;msg/RemoteState.idl;msg/SonarData.idl;msg/DesiredHeading.idl;msg/DesiredHeadingRate.idl;msg/DesiredPitch.idl;msg/DesiredRoll.idl;msg/DesiredSpeed.idl;msg/DesiredZ.idl;msg/PlanDB.idl;msg/PlanSpecification.idl;msg/PlanDBInformation.idl;msg/PlanDBState.idl;msg/PlanManeuver.idl;msg/Maneuver.idl;msg/PolygonVertex.idl")
+set(imc_ros_msgs_INTERFACE_FILES "msg/PlanControl.msg;msg/PlanControlState.msg;msg/VehicleState.msg;msg/EstimatedState.msg;msg/RemoteState.msg;msg/SonarData.msg;msg/DesiredHeading.msg;msg/DesiredHeadingRate.msg;msg/DesiredPitch.msg;msg/DesiredRoll.msg;msg/DesiredSpeed.msg;msg/DesiredZ.msg;msg/PlanDB.msg;msg/PlanSpecification.msg;msg/PlanDBInformation.msg;msg/PlanDBState.msg;msg/PlanManeuver.msg;msg/Maneuver.msg;msg/PolygonVertex.msg")

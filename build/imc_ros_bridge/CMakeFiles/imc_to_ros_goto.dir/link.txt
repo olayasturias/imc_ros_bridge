@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimc_to_ros_goto.a CMakeFiles/imc_to_ros_goto.dir/src/imc_to_ros/Goto.cpp.o
+/usr/bin/ranlib libimc_to_ros_goto.a

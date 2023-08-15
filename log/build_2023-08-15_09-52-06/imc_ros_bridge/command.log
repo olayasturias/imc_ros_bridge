@@ -1,0 +1,2 @@
+Invoking command in '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge -- -j16 -l16
+Invoked command in '/home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olaya/ros2_ws/src/imc_ros/build/imc_ros_bridge -- -j16 -l16
