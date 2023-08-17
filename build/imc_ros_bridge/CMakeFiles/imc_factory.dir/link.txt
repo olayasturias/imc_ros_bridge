@@ -1,2 +1,0 @@
-/usr/bin/ar qc libimc_factory.a CMakeFiles/imc_factory.dir/external/imc-cxx/IMC/Base/Factory.cpp.o
-/usr/bin/ranlib libimc_factory.a

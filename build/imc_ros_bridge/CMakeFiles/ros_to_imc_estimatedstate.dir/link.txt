@@ -1,2 +1,0 @@
-/usr/bin/ar qc libros_to_imc_estimatedstate.a CMakeFiles/ros_to_imc_estimatedstate.dir/src/ros_to_imc/EstimatedState.cpp.o
-/usr/bin/ranlib libros_to_imc_estimatedstate.a

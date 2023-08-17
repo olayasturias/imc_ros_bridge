@@ -1,2 +1,0 @@
-/usr/bin/ar qc libimc_handle.a CMakeFiles/imc_handle.dir/src/imc_handle.cpp.o
-/usr/bin/ranlib libimc_handle.a

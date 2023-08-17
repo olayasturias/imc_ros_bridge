@@ -47,8 +47,6 @@ int main(int argc, char** argv)
     rclcpp::init(argc, argv);
     
     auto ros_node = std::make_shared<rclcpp::Node>("imc_ros_bridge");
-    RCLCPP_INFO(ros_node->get_logger(), "starting imc ros bridge");
-    RCLCPP_INFO(ros_node->get_logger(), "started imc ros bridge");
 
     std::string neptus_addr;
     std::string bridge_tcp_addr;
@@ -56,51 +54,54 @@ int main(int argc, char** argv)
     std::string sys_name;
     int imc_id;
 	int imc_src;
-    rclcpp::Parameter neptus_addr_param("~neptus_addr", neptus_addr);
-    rclcpp::Parameter bridge_tcp_addr_param("~bridge_addr", bridge_tcp_addr);
-    rclcpp::Parameter bridge_tcp_port_param("~bridge_port", bridge_tcp_port);
-    rclcpp::Parameter sys_name_param("~system_name", sys_name);
-    RCLCPP_INFO(ros_node->get_logger(), "neptus_addr: %s", neptus_addr.c_str());
-    RCLCPP_INFO(ros_node->get_logger(), "bridge_tcp_addr: %s", bridge_tcp_addr.c_str());
-    RCLCPP_INFO(ros_node->get_logger(), "bridge_tcp_port: %s", bridge_tcp_port.c_str());
-    RCLCPP_INFO(ros_node->get_logger(), "sys_name: %s", sys_name.c_str());
+    // read ros2 launch variables
+
+    // rclcpp::Parameter neptus_addr_param("~neptus_addr", neptus_addr);
+    ros_node->declare_parameter("neptus_addr", "0.0.0.0");
+    neptus_addr = ros_node->get_parameter("neptus_addr").as_string();
+    ros_node->declare_parameter("bridge_addr", "0.0.0.0");
+    bridge_tcp_addr = ros_node->get_parameter("bridge_addr").as_string();
+    ros_node->declare_parameter("bridge_port", "6002");
+    bridge_tcp_port = ros_node->get_parameter("bridge_port").as_string();
+    ros_node->declare_parameter("system_name", "imc_ros_bridge");
+    sys_name = ros_node->get_parameter("system_name").as_string();
 
 	// Neptus seems to have swapped these values for SOME REASON. so I swap here too...
 	// tldr: imc_id is the vehicle TYPE and imc_src is the SPECIFIC VEHICLE
-    rclcpp::Parameter imc_src_param("~imc_src", imc_src);
-    rclcpp::Parameter imc_id_param("~imc_id", imc_id);
-    RCLCPP_INFO(ros_node->get_logger(), "imc_src: %d", imc_src);
-    RCLCPP_INFO(ros_node->get_logger(), "imc_id: %d", imc_id);
+    ros_node->declare_parameter("imc_src", 150);
+    imc_src = ros_node->get_parameter("imc_src").as_int();
+    ros_node->declare_parameter("imc_id", 450);
+    imc_id = ros_node->get_parameter("imc_id").as_int();
 
     IMCHandle imc_handle(bridge_tcp_addr, bridge_tcp_port, neptus_addr, sys_name, imc_id, imc_src);
     RCLCPP_INFO(ros_node->get_logger(), "created imc handle");
-    ros_to_imc::BridgeServer<std_msgs::msg::Empty, IMC::Heartbeat> heartbeat_server(imc_handle, "heartbeat");
-    ros_to_imc::BridgeServer<sensor_msgs::msg::NavSatFix, IMC::GpsFix> gpsfix_server(imc_handle, "gps_fix");
-    ros_to_imc::BridgeServer<geometry_msgs::msg::Pose, IMC::Goto> goto_server_dummy(imc_handle, "goto_input");
-    ros_to_imc::BridgeServer<sensor_msgs::msg::NavSatFix, IMC::GpsNavData> gpsnavdata_server(imc_handle, "gps_nav_data");
+    //ros_to_imc::BridgeServer<std_msgs::msg::Empty, IMC::Heartbeat> heartbeat_server(imc_handle, "heartbeat");
+    // ros_to_imc::BridgeServer<sensor_msgs::msg::NavSatFix, IMC::GpsFix> gpsfix_server(imc_handle, "gps_fix");
+    // ros_to_imc::BridgeServer<geometry_msgs::msg::Pose, IMC::Goto> goto_server_dummy(imc_handle, "goto_input");
+    // ros_to_imc::BridgeServer<sensor_msgs::msg::NavSatFix, IMC::GpsNavData> gpsnavdata_server(imc_handle, "gps_nav_data");
     RCLCPP_INFO(ros_node->get_logger(), "created servers");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::EstimatedState, IMC::EstimatedState> estimatedstate_server(imc_handle, "estimated_state");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::PlanControlState, IMC::PlanControlState> plancontrolstate_server(imc_handle, "plan_control_state");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::VehicleState, IMC::VehicleState> vehiclestate_server(imc_handle, "vehicle_state");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::RemoteState, IMC::RemoteState> RemoteState_server(imc_handle, "remote_state");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::SonarData, IMC::SonarData> sonar_server(imc_handle, "sonar_data");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredHeading, IMC::DesiredHeading> DesiredHeading_server(imc_handle, "desired_heading");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredHeadingRate, IMC::DesiredHeadingRate> DesiredHeadingRate_server(imc_handle, "desired_heading_rate");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredPitch, IMC::DesiredPitch> DesiredPitch_server(imc_handle, "desired_pitch");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredRoll, IMC::DesiredRoll> DesiredRoll_server(imc_handle, "desired_roll");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredSpeed, IMC::DesiredSpeed> DesiredSpeed_server(imc_handle, "desired_speed");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredZ, IMC::DesiredZ> DesiredZ_server(imc_handle, "desired_z");
-    ros_to_imc::BridgeServer<imc_ros_msgs::msg::PlanDB, IMC::PlanDB> to_imc_plandb_server(imc_handle, "plan_db");
-    RCLCPP_INFO(ros_node->get_logger(), "created servers2");
-    // 450
-    imc_to_ros::BridgeServer<IMC::Goto, geometry_msgs::msg::Pose> goto_server(imc_handle,"goto_waypoint");
-    // 150
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::EstimatedState, IMC::EstimatedState> estimatedstate_server(imc_handle, "estimated_state");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::PlanControlState, IMC::PlanControlState> plancontrolstate_server(imc_handle, "plan_control_state");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::VehicleState, IMC::VehicleState> vehiclestate_server(imc_handle, "vehicle_state");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::RemoteState, IMC::RemoteState> RemoteState_server(imc_handle, "remote_state");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::SonarData, IMC::SonarData> sonar_server(imc_handle, "sonar_data");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredHeading, IMC::DesiredHeading> DesiredHeading_server(imc_handle, "desired_heading");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredHeadingRate, IMC::DesiredHeadingRate> DesiredHeadingRate_server(imc_handle, "desired_heading_rate");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredPitch, IMC::DesiredPitch> DesiredPitch_server(imc_handle, "desired_pitch");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredRoll, IMC::DesiredRoll> DesiredRoll_server(imc_handle, "desired_roll");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredSpeed, IMC::DesiredSpeed> DesiredSpeed_server(imc_handle, "desired_speed");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::DesiredZ, IMC::DesiredZ> DesiredZ_server(imc_handle, "desired_z");
+    // ros_to_imc::BridgeServer<imc_ros_msgs::msg::PlanDB, IMC::PlanDB> to_imc_plandb_server(imc_handle, "plan_db");
+    // RCLCPP_INFO(ros_node->get_logger(), "created servers2");
+    // // 450
+    // imc_to_ros::BridgeServer<IMC::Goto, geometry_msgs::msg::Pose> goto_server(imc_handle,"goto_waypoint");
+    // // 150
     imc_to_ros::BridgeServer<IMC::Heartbeat, std_msgs::msg::Empty> imc_heartbeat_server(imc_handle, "imc_heartbeat");
     // 550
-    imc_to_ros::BridgeServer<IMC::Abort, std_msgs::msg::Empty> abort_server(imc_handle,  "abort");
-    // 556
-    imc_to_ros::BridgeServer<IMC::PlanDB, imc_ros_msgs::msg::PlanDB> plandb_server(imc_handle, "plan_db");
-    imc_to_ros::BridgeServer<IMC::PlanControl, imc_ros_msgs::msg::PlanControl> plancontrol_server(imc_handle,  "plan_control");
+    // imc_to_ros::BridgeServer<IMC::Abort, std_msgs::msg::Empty> abort_server(imc_handle,  "abort");
+    // // 556
+    // imc_to_ros::BridgeServer<IMC::PlanDB, imc_ros_msgs::msg::PlanDB> plandb_server(imc_handle, "plan_db");
+    // imc_to_ros::BridgeServer<IMC::PlanControl, imc_ros_msgs::msg::PlanControl> plancontrol_server(imc_handle,  "plan_control");
     RCLCPP_INFO(ros_node->get_logger(), "created servers3");
     auto announce_timer = ros_node->create_wall_timer(std::chrono::seconds(10), [&imc_handle](){imc_handle.announce();});
     auto heartbeat_timer = ros_node->create_wall_timer(std::chrono::seconds(1), [&imc_handle](){imc_handle.announce();});

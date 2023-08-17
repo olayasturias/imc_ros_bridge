@@ -1,2 +1,0 @@
-/usr/bin/ar qc libros_to_imc_DesiredZ.a CMakeFiles/ros_to_imc_DesiredZ.dir/src/ros_to_imc/DesiredZ.cpp.o
-/usr/bin/ranlib libros_to_imc_DesiredZ.a

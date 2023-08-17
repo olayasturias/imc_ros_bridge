@@ -11,7 +11,7 @@ A simple `colcon build --packages-select imc_ros_bridge` should do.
 
 The command
 ```
-ros2 launch imc_ros_bridge bridge.launch server_addr:=127.0.0.1 server_port:=6002
+ros2 launch imc_ros_bridge bridge.launch server_addr:=172.17.0.1 server_port:=30022
 ```
 will launch the `imc_bridge` node.
 

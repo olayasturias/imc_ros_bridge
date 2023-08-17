@@ -19,19 +19,6 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)  # Include Boost Thread
 
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
-
 include_directories(
   include
   include//imc_to_ros
@@ -288,8 +275,6 @@ target_link_libraries(bridge_node
 
 install(TARGETS
   bridge_node md5 ros_to_imc_heartbeat imc_to_ros_heartbeat ros_to_imc_gpsfix ros_to_imc_goto imc_to_ros_goto imc_factory udp_link imc_handle imc_to_ros_abort imc_to_ros_plandb ros_to_imc_plandb ros_to_imc_gpsnavdata imc_to_ros_plancontrol ros_to_imc_plancontrolstate ros_to_imc_estimatedstate ros_to_imc_vehiclestate ros_to_imc_remotestate ros_to_imc_sonardata ros_to_imc_DesiredHeading ros_to_imc_DesiredHeadingRate ros_to_imc_DesiredPitch ros_to_imc_DesiredRoll ros_to_imc_DesiredSpeed ros_to_imc_DesiredZ
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin)
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

@@ -37,6 +37,10 @@ IMCHandle::IMCHandle(const std::string& bridge_tcp_addr,
       bridge_tcp_addr(bridge_tcp_addr), bridge_tcp_port(bridge_tcp_port),
       sys_name(sys_name), imc_id(imc_id), imc_src(imc_src)
 {
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "bridge tcp address %s", bridge_tcp_addr.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "bridge tcp port %s", bridge_tcp_port.c_str());
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "neptus_addr %s", neptus_addr.c_str());
+              
     lat = 0.0;
     announce();
 }
@@ -48,18 +52,22 @@ IMCHandle::~IMCHandle()
 
 void IMCHandle::tcp_subscribe(uint16_t uid, std::function<void(const IMC::Message*)> callback)
 {
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"),"Got callback with id: %u", uid);
+    // print function name
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "callback type: %s", typeid(callback).name());
     callbacks[uid] = callback;
 }
 
 void IMCHandle::tcp_callback(const IMC::Message* msg)
 {
+    RCLCPP_INFO(rclcpp::get_logger("ros_img_logger"),"Entering TCP callback");
     uint16_t uid = msg->getId();
     if (callbacks.count(uid) > 0) {
 		// 150 is a heartbeat and we dont really care about it. just debug it.
 		// 556 is PlanDB, i _think_ its the planDB succss, meaning "i understood that you got my plan"
 		// neptus basically spams this so im excluding it!
 		if(uid == 150 || uid == 556){
-			RCLCPP_DEBUG(rclcpp::get_logger("ros_img_logger"),"Got callback with id: %u", uid);
+			RCLCPP_INFO(rclcpp::get_logger("ros_img_logger"),"Got callback with id: %u", uid);
 		}else{
 			RCLCPP_INFO(rclcpp::get_logger("ros_img_logger"),"Got callback with id: %u", uid);
 		}

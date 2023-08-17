@@ -13,10 +13,10 @@
   <arg name="imc_system_name" default="imc_ros_bridge"/>
 
   <!-- 4=imc_ros_bridge, 5=sam, 6=lolo -->
-  <arg name="imc_id" default="4"/>
-  <arg name="imc_src" default="$(var imc_id)"/>
+  <arg name="imc_id" default="32886"/>
+  <arg name="imc_src" default="4"/>
 
-  <node pkg="imc_ros_bridge" exec="bridge_node" name="$(var node_name)" output="screen" launch-prefix="gdbserver localhost:3000"  namespace="imc">
+  <node pkg="imc_ros_bridge" exec="bridge_node" name="$(var node_name)" output="screen" launch-prefix='gdbserver localhost:3000' namespace="imc">
     <param name="neptus_addr" value="$(var neptus_addr)"/>
     <param name="bridge_addr" value="$(var bridge_addr)"/>
     <param name="bridge_port" value="$(var bridge_port)" type="str"/>

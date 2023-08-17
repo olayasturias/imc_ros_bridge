@@ -1,2 +1,0 @@
-/usr/bin/ar qc libros_to_imc_gpsfix.a CMakeFiles/ros_to_imc_gpsfix.dir/src/ros_to_imc/GpsFix.cpp.o
-/usr/bin/ranlib libros_to_imc_gpsfix.a

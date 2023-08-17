@@ -86,16 +86,21 @@ private:
 
 public:
 
-    BridgeServer(IMCHandle& imc_handle, const std::string& ros_topic) : rclcpp::Node("bridge_server")
+    BridgeServer(IMCHandle& imc_handle, const std::string& ros_topic) : rclcpp::Node("imc_ros_bridge")
     {
         ros_pub = this->create_publisher<ROS_MSG>(ros_topic, 10);
+        RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "created publisher %s", ros_topic.c_str());
+        RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "IMC getstaticid %u", IMC_MSG::getIdStatic());
+        RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "callback type: %s", typeid(std::bind(&BridgeServer::conversion_callback, this, std::placeholders::_1)).name());
         imc_handle.tcp_subscribe(IMC_MSG::getIdStatic(), std::bind(&BridgeServer::conversion_callback, this, std::placeholders::_1));
+        RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "callback type: %s", typeid(std::bind(&BridgeServer::conversion_callback, this, std::placeholders::_1)).name());
     }
 
     void conversion_callback(const IMC::Message* imc_msg) const
     {
         ROS_MSG ros_msg;
         bool success = convert(static_cast<const IMC_MSG&>(*imc_msg), ros_msg);
+        RCLCPP_INFO(this->get_logger(), "Value of success: %s", success ? "true" : "false");
         if (success) {
             // ros_pub.publish(ros_msg);
             // ros2 publish

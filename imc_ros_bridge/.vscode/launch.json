@@ -3,11 +3,23 @@
     "configurations": [
         {
             "name": "C++ Debugger",
-            "request": "launch",
             "type": "cppdbg",
-            "miDebuggerServerAddress": "localhost:3000",
+            "request": "launch",
+            "program": "/home/olaya/ros2_ws/install/imc_ros_bridge/lib/imc_ros_bridge/bridge_node",
+            "args": [],
+            "stopAtEntry": false,
             "cwd": "/",
-            "program": "/home/olaya/ros2_ws/install/imc_ros_bridge/lib/imc_ros_bridge/bridge_node"
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "localhost:3000",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
         }
     ]
 }

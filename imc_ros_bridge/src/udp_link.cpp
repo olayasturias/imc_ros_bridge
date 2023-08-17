@@ -116,6 +116,7 @@ void UDPLink::publish_multicast(IMC::Message& msg, const string& multicast_addr)
 
 void UDPLink::wait()
 {
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "Waiting for connection.......");
     socket.async_receive_from(boost::asio::buffer(recv_buffer),
                               remote_endpoint,
                               boost::bind(&UDPLink::handle_receive,
@@ -125,6 +126,7 @@ void UDPLink::wait()
 
 void UDPLink::handle_receive(const boost::system::error_code& error, size_t bytes_transferred)
 {
+    RCLCPP_INFO(rclcpp::get_logger("imc_ros_bridge"), "UDP LINK Handle receive");
     if (error) {
         std::cout << "Receive failed: " << error.message() << "\n";
         return;
